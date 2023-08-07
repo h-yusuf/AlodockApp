@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.html"],
   theme: {
     extend: {
       colors : {
@@ -17,4 +17,5 @@ module.exports = {
   },
   plugins: [],
 }
+// "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
 
