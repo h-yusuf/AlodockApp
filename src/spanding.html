@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recent Transaction</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="website icon" type="svg" href="../asset/sim-card.svg" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"  rel="stylesheet" />
+</head>
+
+<body>
+    <div class="px-4 py-4">
+        <div class="flex text-white justify-between" style="align-items: center; margin-bottom: 24px;">
+            <a class="flex items-center" href="/index.html">
+                <ion-icon class="col-span-2 " style="width: 24px; height: 24px;" name="chevron-back-outline"></ion-icon>
+            </a>
+            <h1 class=" font-semibold col-span-10 flex text-center font-laila">Spanding Sumarry</h1>
+            <h1></h1>
+        </div>
+        <div class="flex my-4 gap-4">
+          <div class="bx-shadow rounded-full px-3 py-3 ">
+            <svg class="w-5 h-5 text-gray-800 dark:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1v14h16m0-9-3-2-3 5-3-2-3 4"/>
+            </svg>
+          </div>
+          <div class="rounded-full bg-abu-0 px-3 py-3 ">
+            <svg class="w-5 h-5 text-white dark:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1M2 5h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="my-4">
+          <p class="font-laila text-white">
+            Insight
+          </p>
+        </div>
+<div>
+    <div id="labels-chart" class="ml-min"></div>
+    <div class="grid grid-cols-1 items-center border-gray-200 dark:border-gray-700 justify-between mt-5 p-4 md:p-6 pt-0 md:pt-0">
+      <div class="flex justify-between items-center pt-5">
+        <!-- Button -->
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="lastDaysdropdown"
+          data-dropdown-placement="bottom"
+          class="font-laila text-base text-white dark:text-gray-400 hover:text-kng-0 text-center inline-flex items-center "
+          type="button">
+          Last 30 days
+          <svg class="w-4 h-4 text-gray-800 dark:text-white  ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z"/>
+          </svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div id="lastDaysdropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yesterday</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Today</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 7 days</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 30 days</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 90 days</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="flex justify-between">
+    <div class="flex flex-col items-center rounded-lg bg-abu-0 bg-opacity-20 px-8 py-4">
+      <p class="text-white text-lg">Send</p>
+      <p class="text-mera-0 text-xl">-Rp13,000,000</p>
+    </div>
+    <div class="flex flex-col items-center rounded-lg bg-abu-0 bg-opacity-20 px-8 py-4">
+      <p class="text-white text-lg">Receive</p>
+      <p class="text-ijo-0 text-xl">+Rp8,000,000</p>
+    </div>
+  </div>
+  <div class="flex my-4 flex-col rounded-lg bg-abu-0 bg-opacity-20 px-4 py-4">
+    <p class="text-white text-lg">Jumlah Transaksi</p>
+    <div class=" my-4 crit">
+      <div class="flex items-center justify-between">
+        <img src="../asset/row up mini.png" alt="">
+        <p class="mx-2 text-white">out</p>
+        <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 "></div>
+        <p class="mx-4 text-white">49</p>
+      </div>
+      <div class="flex items-center justify-between my-4">
+        <img src="../asset/row down mini.png" alt="">
+        <p class="mx-2 text-white">in</p>
+        <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-44 mr-3 "></div>
+        <p class="mx-4 text-white">44</p>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+  <script>
+    // ApexCharts options and config
+    window.addEventListener("load", function() {
+      let options = {
+        // set the labels option to true to show the labels on the X and Y axis
+        xaxis: {
+          show: true,
+          categories: ['01-05', '06-10', '11-15', '16-20', '21-25', '26-31',],
+          labels: {
+            show: true,
+            style: {
+              fontFamily: "poppins",
+              cssClass: 'text-xs fill-gray-50 '
+            }
+          },
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+        },
+        yaxis: {
+          show: true,
+          labels: {
+            show: true,
+            style: {
+              fontFamily: "poppins",
+              cssClass: 'text-xs  fill-gray-50 '
+            },
+            formatter: function (value) {
+              return  value + 'jt' ;
+            }
+          }
+        },
+        series: [
+          {
+            name: "Send",
+            data: [15, 14, 10, 15, 13, 12,12],
+            color: "#FF6D62",
+          },
+          {
+            name: "Receive",
+            data: [14, 13, 16, 12, 17, 15,15],
+            color: "#39AA84",
+          },
+        ],
+        chart: {
+          sparkline: {
+            enabled: false
+          },
+          height: "100%",
+          width: "100%",
+          type: "area",
+          fontFamily: "poppins",
+          dropShadow: {
+            enabled: false,
+          },
+          toolbar: {
+            show: false,
+          },
+        },
+        tooltip: {
+          enabled: true,
+          x: {
+            show: false,
+          },
+        },
+        fill: {
+          type: "gradient",
+          gradient: {
+            opacityFrom: 0.55,
+            opacityTo: 0,
+            shade: "#1C64F2",
+            gradientToColors: ["#1C64F2"],
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          width: 3,
+        },
+        legend: {
+          show: false
+        },
+        grid: {
+          show: false,
+        },
+      }
+  
+      if (document.getElementById("labels-chart") && typeof ApexCharts !== 'undefined') {
+        const chart = new ApexCharts(document.getElementById("labels-chart"), options);
+        chart.render();
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

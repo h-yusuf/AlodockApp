@@ -72,3 +72,6 @@ body {
 .swict-btn{
   width: 130px;
 }
+.ml-min{
+  margin-left: -16px !important;
+}
