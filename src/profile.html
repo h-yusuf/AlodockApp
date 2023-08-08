@@ -6,9 +6,12 @@
     <title>AlloDockApp</title>
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="website icon" type="svg" href="../asset/sim-card.svg" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"  rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body class=" bg-primary">
+  <body>
     <div class="px-4 py-4">
       <div
         class="flex text-white justify-between"
@@ -21,13 +24,192 @@
             name="chevron-back-outline"
           ></ion-icon>
         </a>
-        <h1 class="font-semibold col-span-10 flex text-center">Profile</h1>
+        <h1 class="font-semibold col-span-10 flex text-center me-6">PROFILE</h1>
         <h1></h1>
       </div>
-      <div class="pt-6 pb-4 flex text-center justify-center">
-
+      <div class="pt-6 pb-4 flex flex-col items-center">
+        <img
+          id="avatarButton"
+          type="button"
+          data-dropdown-toggle="userDropdown"
+          data-dropdown-placement="bottom-start"
+          class="w-24 h-24 rounded-full cursor-pointer flex"
+          style="text-align: center"
+          src="../asset/luffy.jpg"
+          alt="User dropdown"
+        />
+        <p class="text-xl py-4 text-white">amdy sachanova</p>
+        <div class="flex gap-1">
+          <img class="w-3 h-3" src="../asset/sim-card.svg" alt="" />
+          <p class="text-abutxt-0 text-xs">125*********142988</p>
+          <p class="text-ijo-0 text-xs">Mandiri</p>
+        </div>
+      </div>
+      <div
+        class="ractangle bg-abu-0 bg-opacity-20 rounded-xl px-6 py-6 flex flex-col justify-between"
+      >
+        <div class="flex flex-col gap-2 items-center justify-center">
+          <p class="text-white text-2xl font-laila">Rp230,000,000</p>
+        </div>
+        <div class="flex flex-wrap gap-2 justify-between">
+          <div class="flex flex-col items-center">
+            <p class="py-1 text-white text-xs">send</p>
+            <div
+              class="bg-abutxt-0 rounded-full px-6 py-2 bg-opacity-20 flex text-mera-0"
+            >
+              <ion-icon name="arrow-up-outline"></ion-icon>
+              <p class="text-xs">Rp13,000,000</p>
+            </div>
+          </div>
+          <div class="bg-abutxt-0 bg-opacity-20" style="width: 2px"></div>
+          <div class="flex flex-col items-center">
+            <p class="py-1 text-white text-xs">Receive</p>
+            <div
+              class="bg-abutxt-0 rounded-full px-6 bg-opacity-20 py-2 flex text-ijo-0"
+            >
+              <ion-icon name="arrow-down-outline"></ion-icon>
+              <p class="text-xs">Rp8,000,000</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- card content -->
+
+    <div class="px-6 py-6 bg-abu-0 bg-opacity-20 rounded-t-xl">
+      <div class="kk">
+
+        <!-- content pp -->
+
+        <div>
+            <div class="flex justify-between items-center gap-3">
+              <img class="" src="../asset/pp-profile.svg" alt="" />
+              <p class="text-white pr-5" style="width: 100%">Akun Terhubung</p>
+              <svg
+                class="w-6 h-6 text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 8 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-abutxt-0 my-4 opacity-20"
+              style="height: 1px; width: 100%"
+            ></div>
+        </div>
+
+        <div>
+            <div class="flex justify-between items-center gap-3">
+              <img class="" src="../asset/scurity-profile.svg" alt="" />
+              <p class="text-white pr-5" style="width: 100%">Atur Sandi</p>
+              <svg
+                class="w-6 h-6 text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 8 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-abutxt-0 my-4 opacity-20"
+              style="height: 1px; width: 100%"
+            ></div>
+        </div>
+        <div>
+            <div class="flex justify-between items-center gap-3">
+              <img class="" src="../asset/payment-profile.svg" alt="" />
+              <p class="text-white pr-5" style="width: 100%">Atur Rekening</p>
+              <svg
+                class="w-6 h-6 text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 8 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-abutxt-0 my-4 opacity-20"
+              style="height: 1px; width: 100%"
+            ></div>
+        </div>
+        <div>
+            <div class="flex justify-between items-center gap-3">
+              <img class="" src="../asset/chat-profile.svg" alt="" />
+              <p class="text-white pr-5" style="width: 100%">FAQ</p>
+              <svg
+                class="w-6 h-6 text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 8 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+                />
+              </svg>
+            </div>
+            <div
+              class="bg-abutxt-0 my-4 opacity-20"
+              style="height: 1px; width: 100%"
+            ></div>
+        </div>
+        <div>
+            <div class="flex justify-between items-center gap-3">
+              <img class="" src="../asset/logout-profile.svg" alt="" />
+              <p class="text-mera-0 pr-5" style="width: 100%">Log Out</p>
+              <svg
+                class="w-6 h-6 text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 8 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+                />
+              </svg>
+            </div>
+        </div>
+      </div>
+      <div style="margin-top: 88px;" class="flex flex-col items-center">
+        <p class="text-abutxt-0 font-laila text-xs">Versi 2.23.2</p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

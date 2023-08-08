@@ -8,6 +8,7 @@ module.exports = {
         "mera"   : ['#FF6D62'],
         "ijo"   : ['#39AA84'],
         "abutxt"   : ['#656565'],
+        "abu"   : ['#313131']
       },
       fontFamily : {
         "poppins" : ['poppins'],
@@ -17,5 +18,4 @@ module.exports = {
   },
   plugins: [],
 }
-// "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
 
