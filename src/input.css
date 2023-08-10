@@ -75,3 +75,6 @@ body {
 .ml-min{
   margin-left: -16px !important;
 }
+.swict-btn.active {
+  background-color: #DAFE3C; /* Atur warna latar belakang menjadi kuning */
+}
