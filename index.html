@@ -402,13 +402,14 @@
          
             <div data-dial-init class="fixed right-3 bottom-4 group" style="margin-bottom: -12px;">
                 <div id="speed-dial-menu-click" class="flex flex-col items-center hidden mb-4 space-y-2">
-                    
-                    <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="left" class="flex  justify-center items-center w-[52px] h-[52px] bg-kng-0  shadow-sm  rounded-full text-black">
-                        <svg class="w-6 h-6  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 1v14h16m0-9-3-2-3 5-3-2-3 4"/>
-                          </svg>
-                        <span class="sr-only">Download</span>
-                    </button>
+                    <a href="./src/spanding.html">
+                      <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="left" class="flex  justify-center items-center w-[52px] h-[52px] bg-kng-0  shadow-sm  rounded-full text-black">
+                          <svg class="w-6 h-6  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 1v14h16m0-9-3-2-3 5-3-2-3 4"/>
+                            </svg>
+                          <span class="sr-only">Download</span>
+                      </button>
+                    </a>
                     <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
                         Summary
                         <div class="tooltip-arrow" data-popper-arrow></div>
