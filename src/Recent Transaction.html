@@ -22,13 +22,13 @@
           </button>
             <div class="bg-abu flex  bg-abutxt-0 bg-opacity-20 px-2 py-2 rounded-full" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
               <div role="presentation" >
-                <button class=" rounded-full swict-btn gap-2 px-6 py-1.5 flex  focus:bg-kng-0 focus:text-black active"  id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" >
+                <button class=" rounded-full  gap-2 px-6 py-1.5 flex  focus:bg-kng-0 focus:text-black "  id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true" >
                   <ion-icon class="px24" name="arrow-up-outline"></ion-icon>
                 <p class="text-xl font-extrabold">Send</p>
               </button>
               </div>
               <div role="presentation">
-                <button class="rounded-full px-6 py-1.5 flex swict-btn focus:bg-kng-0  focus:text-black"  id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
+                <button class="rounded-full px-6 py-1.5 flex  focus:bg-kng-0  focus:text-black"  id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
                   <ion-icon class="px24" name="arrow-down-outline"></ion-icon>
                 <p class="text-xl font-extrabold ">Receive</p>
               </button>
@@ -39,7 +39,7 @@
         <div id="top-left-modal" data-modal-placement="top-left" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
           <div class="relative w-full max-w-2xl max-h-full">
               <!-- Modal content -->
-              <div class="relative bg-abu-0 rounded-b-lg shadow">
+              <div class="relative bg-ireng-0 rounded-b-lg shadow">
                   <!-- Modal header -->
                   <div class="flex flex-col p-5 ">
                       <div class="flex justify-between items-center ">
@@ -63,33 +63,31 @@
                               <label for="default-radio-2" class="ml-2 text-sm font-medium text-white ">Terlama</label>
                           </div>
                           <div class="flex items-center space-x-2 mt-4 rounded-b ">
-                              <button data-modal-hide="bottom-right-modal " type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full">Reset</button>
-                              <button data-modal-hide="bottom-right-modal " type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600 w-full">Tampilkan</button>
+                            <button data-modal-hide="bottom-right-modal " type="button" class="text-white bg-abu-0 hover:bg-mera-0  font-medium rounded-lg text-sm px-5 py-2.5 text-center  w-full">RESET</button>
+                            <button data-modal-hide="bottom-right-modal " type="button" class="text-white bg-abu-0 hover:bg-mera-0   rounded-lg  text-sm font-medium px-5 py-2.5  w-full">TAMPILKAN</button>
                           </div>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-        <div
-        class="card bg-abutxt-0 rounded-xl my-6 px-6 py-2 bg-opacity-20 flex"
-      >
-        <ion-icon
-          class="text-abutxt-0 py-2 px-2"
-          name="search-outline"
-        ></ion-icon>
-        <input
-          class="bg-abutxt-0 bg-opacity-5 h-full w-full py-1 bg px-3  outline-none text-white border-none"
-          type="text"
-          placeholder="Search Transaction"
-        />
-      </div>
+      <form class="my-6">   
+        <label for="default-search" class="mb-2  text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="search" id="default-search" class="outline-none block w-full p-4  pl-10 text-sm  bg-abutxt-0 rounded-xl bg-opacity-20 text-white" placeholder="Search Transaction..." required>
+        </div>
+    </form>
 
       <!-- konten scroll -->
 
       <div  id="myTabContent" class=" grid gap-y-4 touch-pan-y start-2 overflow-y-auto" style="height: 663px;">
         <div class="hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <div class="flex bg-abutxt-0 my-3 bg-opacity-20 px-3 py-2 rounded-xl gap-4">
+          <div class="flex bg-abutxt-0  bg-opacity-20 px-3 py-2 rounded-xl gap-4">
             <div class="px-3 py-3 bx-shadow rounded-xl">
               <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13V1m0 0L1 5m4-4 4 4"/>

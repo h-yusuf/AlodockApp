@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recent Transaction</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="website icon" type="svg" href="../asset/sim-card.svg" />
+  </head>
+  <body>
+    <div class="px-4 py-4">
+        <div class="flex text-white justify-between" style="align-items: center; margin-bottom: 24px;">
+            <a href="home.html">
+                <ion-icon class="col-span-2 " style="width: 24px; height: 24px;"  name="chevron-back-outline"></ion-icon>
+            </a>
+            <h1 class=" font-semibold col-span-10 flex text-center">Reports</h1>
+            <h1></h1>
+        </div>
+        <form class="my-6">   
+            <label for="default-search" class="mb-2  text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                <input type="search" id="default-search" class="outline-none block w-full p-4  pl-10 text-sm  bg-abutxt-0 rounded-xl bg-opacity-20 text-white" placeholder="Search Transaction..." required>
+                <button type="button" class="absolute right-2.5 bottom-2.5" data-modal-target="top-left-modal" data-modal-toggle="top-left-modal">
+                    <ion-icon class="px32 text-white flex rotate-90" name="options-outline"></ion-icon>
+                  </button>
+                  <div id="top-left-modal" data-modal-placement="top-left" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative w-full max-w-2xl max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-ireng-0 rounded-b-lg ">
+                            <!-- Modal header -->
+                            <div class="flex flex-col p-5 gap-2">
+                                <div class="flex justify-between items-center ">
+                                    <h3 class="text-xl font-medium text-white ">
+                                        Filter
+                                    </h3>
+                                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="top-left-modal">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <div >
+                                    <div class="space-y-4">
+                                        <h2 class="text-white">Urutkan Berdasarkan</h2>
+                                        <div class="flex gap-2 ">
+                                            <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                    Pekan
+                                                </span>
+                                              </button>
+                                              <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                    Bulan
+                                                </span>
+                                              </button>
+                                              <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                    Tahun
+                                                </span>
+                                              </button>
+                                              
+                                            
+                                            </div>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <h2 class="text-white">Kategori</h2>
+                                        <div class="w-full overflow-scroll ">
+                                            <div class="flex gap-0.5  " style="width: 550px;">
+                                                <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                    <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                        Semua
+                                                    </span>
+                                                  </button>
+                                                  <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                    <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                        Pembayaran
+                                                    </span>
+                                                  </button>
+                                                  <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                    <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                        Kirim Uang
+                                                    </span>
+                                                  </button>
+                                                  <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                    <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                        Tarik Saldo
+                                                    </span>
+                                                  </button>
+                                                  
+                                                
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <h2 class="text-white">Kategori</h2>
+                                        <div class="w-full overflow-scroll ">
+                                            <div class="flex gap-0.5  " style="width: 680px;">
+                                                <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                    <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                        Semua
+                                                    </span>
+                                                  </button>
+                                                  <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                    <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                        Qris
+                                                    </span>
+                                                  </button>
+                                                  <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                    <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                        Transfer Bank
+                                                    </span>
+                                                  </button>
+                                                  <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                    <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                        Kartu Kredit    
+                                                    </span>
+                                                  </button>
+                                                  <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                                    <span class="relative px-5 w-full py-1 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                                        Kartu Debit  
+                                                    </span>
+                                                  </button>
+                                                  
+                                                
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-2 mt-4 rounded-b ">
+                                        <button data-modal-hide="bottom-right-modal " type="button" class="text-white bg-abu-0 hover:bg-mera-0  font-medium rounded-lg text-sm px-5 py-2.5 text-center  w-full">RESET</button>
+                                        <button data-modal-hide="bottom-right-modal " type="button" class="text-white bg-abu-0 hover:bg-mera-0   rounded-lg  text-sm font-medium px-5 py-2.5  w-full">TAMPILKAN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class=" mt-6 flex-col flex gap-3 overflow-auto w-full " style="height: 640px;">
+            <div class="gap-3 flex flex-col">
+                <p class="text-abutxt-0">This week</p>
+                <div class="gap-y-4 flex flex-col">
+                    <div class="flex bg-abutxt-0 bg-opacity-20 px-3 py-2 rounded-xl gap-4">
+                        <div class="px-3 py-3 bx-shadow rounded-xl">
+                          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 1v12m0 0 4-4m-4 4L1 9"/>
+                          </svg>
+                        </div>
+                      <div class="flex w-full justify-between snap-center">
+                          <div class="text-white ">
+                            <p class="font-laila">Monkey D Dragon</p>
+                            <p class="font-laila text-xs">12 mei 2023</p>
+                          </div>
+                          <div class="text-ijo-0 f-15">
+                            <p class="font-laila">Rp200.000</p>
+                            <p class="font-laila text-xs flex justify-end">Send</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="flex bg-abutxt-0  bg-opacity-20 px-3 py-2 rounded-xl gap-4">
+                        <div class="px-3 py-3 bx-shadow rounded-xl">
+                          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13V1m0 0L1 5m4-4 4 4"/>
+                          </svg>
+                        </div>
+                      <div class="flex w-full justify-between snap-center">
+                          <div class="text-white ">
+                            <p class="font-laila">Ahmad Ayub</p>
+                            <p class="font-laila text-xs">12 mei 2023</p>
+                          </div>
+                          <div class="text-mera-0 f-15">
+                            <p class="font-laila">Rp200.000</p>
+                            <p class="font-laila text-xs flex justify-end">Send</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex bg-abutxt-0  bg-opacity-20 px-3 py-2 rounded-xl gap-4">
+                        <div class="px-3 py-3 bx-shadow rounded-xl">
+                          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 1v12m0 0 4-4m-4 4L1 9"/>
+                          </svg>
+                        </div>
+                      <div class="flex w-full justify-between snap-center">
+                          <div class="text-white ">
+                            <p class="font-laila">Monkey D Dragon</p>
+                            <p class="font-laila text-xs">12 mei 2023</p>
+                          </div>
+                          <div class="text-ijo-0 f-15">
+                            <p class="font-laila">Rp200.000</p>
+                            <p class="font-laila text-xs flex justify-end">Send</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    
+            <div class="gap-3 flex flex-col">
+                <p class="text-abutxt-0">Last week</p>
+                <div class="gap-y-4 flex flex-col">
+                    <div class="flex bg-abutxt-0 bg-opacity-20 px-3 py-2 rounded-xl gap-4">
+                        <div class="px-3 py-3 bx-shadow rounded-xl">
+                          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 1v12m0 0 4-4m-4 4L1 9"/>
+                          </svg>
+                        </div>
+                      <div class="flex w-full justify-between snap-center">
+                          <div class="text-white ">
+                            <p class="font-laila">Monkey D Buggy</p>
+                            <p class="font-laila text-xs">7 mei 2023</p>
+                          </div>
+                          <div class="text-ijo-0 f-15">
+                            <p class="font-laila">Rp200.000</p>
+                            <p class="font-laila text-xs flex justify-end">Send</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="flex bg-abutxt-0  bg-opacity-20 px-3 py-2 rounded-xl gap-4">
+                        <div class="px-3 py-3 bx-shadow rounded-xl">
+                          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13V1m0 0L1 5m4-4 4 4"/>
+                          </svg>
+                        </div>
+                      <div class="flex w-full justify-between snap-center">
+                          <div class="text-white ">
+                            <p class="font-laila">Radiya Fatasy</p>
+                            <p class="font-laila text-xs">8 mei 2023</p>
+                          </div>
+                          <div class="text-mera-0 f-15">
+                            <p class="font-laila">Rp2000.000</p>
+                            <p class="font-laila text-xs flex justify-end">Send</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="gap-3 flex flex-col">
+                <p class="text-abutxt-0">2 Last week</p>
+                <div class="gap-y-4 flex flex-col">
+                    <div class="flex bg-abutxt-0 bg-opacity-20 px-3 py-2 rounded-xl gap-4">
+                        <div class="px-3 py-3 bx-shadow rounded-xl">
+                          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 1v12m0 0 4-4m-4 4L1 9"/>
+                          </svg>
+                        </div>
+                      <div class="flex w-full justify-between snap-center">
+                          <div class="text-white ">
+                            <p class="font-laila">Monkey D Dragon</p>
+                            <p class="font-laila text-xs">12 mei 2023</p>
+                          </div>
+                          <div class="text-ijo-0 f-15">
+                            <p class="font-laila">Rp200.000</p>
+                            <p class="font-laila text-xs flex justify-end">Send</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="flex bg-abutxt-0  bg-opacity-20 px-3 py-2 rounded-xl gap-4">
+                        <div class="px-3 py-3 bx-shadow rounded-xl">
+                          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13V1m0 0L1 5m4-4 4 4"/>
+                          </svg>
+                        </div>
+                      <div class="flex w-full justify-between snap-center">
+                          <div class="text-white ">
+                            <p class="font-laila">Ahmad Ayub</p>
+                            <p class="font-laila text-xs">12 mei 2023</p>
+                          </div>
+                          <div class="text-mera-0 f-15">
+                            <p class="font-laila">Rp200.000</p>
+                            <p class="font-laila text-xs flex justify-end">Send</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex bg-abutxt-0  bg-opacity-20 px-3 py-2 rounded-xl gap-4">
+                        <div class="px-3 py-3 bx-shadow rounded-xl">
+                          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 1v12m0 0 4-4m-4 4L1 9"/>
+                          </svg>
+                        </div>
+                      <div class="flex w-full justify-between snap-center">
+                          <div class="text-white ">
+                            <p class="font-laila">Monkey D Dragon</p>
+                            <p class="font-laila text-xs">12 mei 2023</p>
+                          </div>
+                          <div class="text-ijo-0 f-15">
+                            <p class="font-laila">Rp200.000</p>
+                            <p class="font-laila text-xs flex justify-end">Send</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+  </html>

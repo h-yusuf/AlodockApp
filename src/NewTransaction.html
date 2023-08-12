@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlloDockApp</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="website icon" type="svg" href="../asset/sim-card.svg" />
+</head>
+
+<body>
+    <div class="px-4 py-4">
+        <div class="flex text-white justify-between" style="align-items: center; margin-bottom: 24px;">
+            <a>
+            </a>
+            <h1 class=" font-semibold col-span-10 flex text-center font-laila">Spanding Sumarry</h1>
+            <h1></h1>
+        </div>
+
+        <!-- Konten fotm -->
+        <form action="home.html" class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4">
+                <label for="base-input" class="block mb-2 text-sm font-laila text-gray-900 dark:text-white">Chose
+                    Category</label>
+                <input type="text" id="base-input" placeholder="Pembayaran"
+                    class="bg-abu-0 bg-opacity-40 border-abutxt-0 border text-white text-sm rounded-lg placeholder:text-abutxt-0 outline-none block w-full p-2.5 ">
+            </div>
+            <div class="flex flex-col gap-4">
+                <label for="base-input" class="block mb-2 text-sm font-laila text-gray-900 dark:text-white">Date</label>
+                <input type="date" id="base-input"
+                    class="bg-abu-0 bg-opacity-40 border-abutxt-0 border text-abutxt-0 text-sm rounded-lg placeholder:text-abutxt-0 outline-none block w-full p-2.5 ">
+            </div>
+            <div class="flex flex-col gap-4">
+                <label for="base-input" class="block mb-2 text-sm font-laila text-gray-900 dark:text-white">Payment
+                    Methode</label>
+                <select id="countries"
+                    class="bg-abu-0 bg-opacity-40  border-abutxt-0 border text-abutxt-0 text-sm rounded-lg placeholder:text-abutxt-0 outline-none   w-full px-2.5 py-3 focus:bg-gray-100">
+                    <option selected>Bank Yang Telah Terdaftar?</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div class="flex flex-col gap-4">
+                <label for="base-input" class="block mb-2 text-sm font-laila text-gray-900 dark:text-white">Chose
+                    Nominal</label>
+                <input type="number" id="base-input" placeholder="Bank Yang Telah Terdaftar?"
+                    class="bg-abu-0 bg-opacity-40 border-abutxt-0 border text-white text-sm rounded-lg placeholder:text-abutxt-0 outline-none block w-full p-2.5 ">
+            </div>
+            <div class="flex flex-col gap-4">
+                <label for="base-input" class="block mb-2 text-sm font-laila text-gray-900 dark:text-white">Note</label>
+                <textarea id="message" rows="4"
+                    class="block p-2.5 w-full text-sm bg-abu-0 bg-opacity-40 border-abutxt-0 border text-white rounded-lg outline-none h-32 resize-none placeholder:text-abutxt-0 "
+                    placeholder="Write your thoughts here..."></textarea>
+            </div>
+            <button type="submit" style="margin-top: 24px!important;"
+                class="w-full text-black bg-kng-0 font-medium mt- rounded-lg text-sm px-5 py-2.5 text-center">Send</button>
+        </form>
+
+
+        <!-- bar -->
+
+        <div
+            class="bar-terbang flex  bg-abutxt-0 bg-opacity-20 px-2 py-1 rounded-full justify-between fixed bottom-4 left-0 right-0">
+            <a href="home.html">
+                <button type="button" aria-selected="true" class=" items-center px-3 py-3 rounded-full  flex">
+                    <svg class="w-6 h-6 text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9" />
+                    </svg>
+                </button>
+            </a>
+            <button type="button" class="px-4   py-4 rounded-full bg-kng-0 flex  text-black switc-btn active">
+                <ion-icon style="height: 24px; width: 24px;" class="text-black mr-1" name="add-outline"></ion-icon>
+            </button>
+            <div>
+                <button type="button" class="px-3 py-3  rounded-full  flex">
+                    <ion-icon style="height: 24px; width: 24px;" class="text-none" name=""></ion-icon>
+                </button>
+            </div>
+
+            <div data-dial-init class="fixed right-3 bottom-4 group" style="margin-bottom: -12px;">
+                <div id="speed-dial-menu-click" class="flex-col flex items-center hidden mb-3  space-y-4">
+                    <a href="./spanding.html">
+                        <button type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="left"
+                            class="flex  justify-center items-center w-[52px] h-[52px] bg-kng-0  shadow-sm  rounded-full text-black">
+                            <svg class="w-6 h-6  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 18 16">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5" d="M1 1v14h16m0-9-3-2-3 5-3-2-3 4" />
+                            </svg>
+                            <span class="sr-only">Download</span>
+                        </button>
+                    </a>
+                    <div id="tooltip-download" role="tooltip"
+                        class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Summary
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                    <a href="reports.html">
+                        <button type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="left"
+                            class="flex justify-center items-center w-[52px] h-[52px] bg-kng-0   shadow-sm rounded-full text-black">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 16 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M4.828 10h6.239m-6.239 4h6.239M6 1v4a1 1 0 0 1-1 1H1m14-4v16a.97.97 0 0 1-.933 1H1.933A.97.97 0 0 1 1 18V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 5.828 1h8.239A.97.97 0 0 1 15 2Z" />
+                            </svg>
+                            <span class="sr-only">Copy</span>
+                        </button>
+                    </a>
+                    <div id="tooltip-copy" role="tooltip"
+                        class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                        Reports
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </div>
+                <button type="button" aria-selected="false" data-dial-toggle="speed-dial-menu-click"
+                    data-dial-trigger="click" aria-controls="speed-dial-menu-click" aria-expanded="false"
+                    class="switc-btn active flex items-center justify-center text-white focus:text-black  rounded-full w-14 h-14 hover:bg-kng-0 focus:bg-kng-0  ">
+
+                    <ion-icon style="height: 24px; width: 24px;" class="transition-transform group-hover:rotate-45"
+                        name="grid-outline"></ion-icon>
+
+                    <span class="sr-only">Open actions menu</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

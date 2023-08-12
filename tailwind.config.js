@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors : {
         "kng" : ['#DAFE3C'],
+        "ireng" : ['#131313'],
         "mera"   : ['#FF6D62'],
         "ijo"   : ['#39AA84'],
         "abutxt"   : ['#656565'],
