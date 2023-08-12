@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class=" w-full h-full">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recent Transaction</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="website icon" type="svg" href="../asset/sim-card.svg" />
+</head>
+
+<body class="bg-img-lg">
+        <div class="px-12 w-full h-full flex flex-col justify-between">
+            <div class="py-32">a</div>
+            <div class="gap-4 ">
+                <div class="px-6 py-6 lg:px-8 relative  rounded-lg shadow bg-abutxt-0 blur-lc bg-opacity-20">
+                    <h3 class="mb-4 text-xl font-medium text-center text-white">Sign in</h3>
+                    <form class="space-y-4" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-white">Email</label>
+                            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="w-full block">
+                                <input class="bg-abutxt-0 bg-opacity-20 outline-none text-white text-sm rounded-lg  block w-full p-2.5 " placeholder="name@company.com">
+                            </button>
+                        </div>
+                        <div style="margin-top: 8px !important;">
+                            <label for="password" class="block mb-2 text-sm font-medium text-white">Password</label>
+                            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="w-full block">
+                                <input placeholder="••••••••" class="bg-abutxt-0 bg-opacity-20 outline-none text-white border-none text-sm rounded-lg block w-full p-2.5 ">
+                            </button>
+                        </div>
+                        <button type="submit" style="margin-top: 24px!important;"  class="w-full text-white bg-abutxt-0 bg-opacity-20 font-medium mt- rounded-lg text-sm px-5 py-2.5 text-center">Sign in</button>
+                        <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                            Not registered? <a href="#" class="text-blue-700 hover:underline"><a class="text-blue-700" href="signUp.html">Create an acount</a></a>
+                        </div>
+                    </form>   
+                </div>
+                <div class="flex justify-between py-6 items-center gap-2">
+                <div class="bg-abutxt-0 w-full " style="height: 2px !important;">
+                </div>
+                <div class=" text-white">
+               or   
+                </div>
+                <div class="bg-abutxt-0 w-full " style="height: 2px !important;">
+                </div>
+            </div>
+                <div class=" px-12 ">
+                    <div class="flex flex-col gap-3 items-center">
+                        <button type="submit" class=" w-full justify-between border border-abutxt-0 text-white  flex items-center py-2 px-14 rounded-full  bg-abutxt-0 bg-opacity-20 font-medium mt-  text-sm  text-center">  
+                           <div></div>
+                            <div class="flex items-center gap-3">
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+                                    <path d="M14.537 10.625a4.421 4.421 0 0 0 2.684 4.047 10.96 10.96 0 0 1-1.384 2.845c-.834 1.218-1.7 2.432-3.062 2.457-1.339.025-1.769-.794-3.3-.794s-2.009.769-3.275.82c-1.316.049-2.317-1.318-3.158-2.532C1.323 14.984.01 10.451 1.772 7.391a4.9 4.9 0 0 1 4.139-2.507c1.292-.025 2.511.869 3.3.869.789 0 2.271-1.075 3.828-.917A4.67 4.67 0 0 1 16.7 6.82a4.524 4.524 0 0 0-2.161 3.805M12.02 3.193A4.4 4.4 0 0 0 13.06 0a4.482 4.482 0 0 0-2.946 1.516 4.185 4.185 0 0 0-1.061 3.093 3.708 3.708 0 0 0 2.967-1.416Z"/>
+                                  </svg><p class="mt-1">Sign in with Apple</p>
+                            </div>
+                            <div></div>
+                        </button>
+                        <button type="submit" class="w-full justify-between border border-abutxt-0 text-white  flex items-center py-2 px-14 rounded-full  bg-abutxt-0 bg-opacity-20 font-medium mt-  text-sm  text-center">  
+                           <div></div>
+                            <div class="flex items-center gap-3">
+                                <img src="../asset/Google.svg" alt="">
+                                <p class="mt-1">Sign in with google</p>
+                            </div>
+                            <div></div>
+                        </button>
+                        <button type="submit" class="w-full justify-between border border-abutxt-0 text-white  flex items-center py-2 px-14 rounded-full  bg-abutxt-0 bg-opacity-20 font-medium mt-  text-sm  text-center">  
+                           <div></div>
+                            <div class="flex items-center gap-3">
+                                <img src="../asset/Facebook.svg" alt="">
+                                <p class="mt-1">Sign in with Apple</p>
+                            </div>
+                            <div></div>
+                        </button>
+                        <div class="py-4 text-white"></div>
+                    </div>
+    
+            </div>
+            </div>
+        <div class=" h-24"></div>
+
+        <!-- Modal Content -->
+
+        <div id="authentication-modal" tabindex="-1" aria-hidden="true" class=" fixed  top-6 left-0 right-0  hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full " style="align-items: start;">
+            <div class="relative w-full max-w-md max-h-full">
+                <div class="px-6 py-6 lg:px-8 relative  rounded-lg shadow bg-abutxt-0 blur-lc bg-opacity-20">
+                    <h3 class="mb-4 text-xl font-medium text-center text-white">Sign in</h3>
+                    <form class="space-y-4 z-50" action="./home.html" >
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-white">Email</label>
+                            <input type="email" name="email" id="email" class="bg-abutxt-0 bg-opacity-20 outline-none text-white text-sm rounded-lg  block w-full p-2.5 " placeholder="name@company.com" required>
+                        </div>
+                        <div style="margin-top: 8px !important;">
+                            <label for="password" class="block mb-2 text-sm font-medium text-white">Password</label>
+                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-abutxt-0 bg-opacity-20 outline-none text-white border-none text-sm rounded-lg block w-full p-2.5 " required>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required>
+                                </div>
+                                <label for="remember" class="ml-2 text-sm font-medium text-white">Remember me</label>
+                            </div>
+                            <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+                        </div>
+                        <button type="submit" style="margin-top: 24px!important;"  class="w-full text-white bg-abutxt-0 bg-opacity-20 font-medium mt- rounded-lg text-sm px-5 py-2.5 text-center">Sign in</button>
+                        <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                            Not registered? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+                        </div>
+                    </form>   
+                    
+                </div>
+                <div class="overlaylc -z-50" id="overlaylc" onclick="closeModal()"></div>
+
+        </div>
+        </div>
+    </div>
+    <script>
+const overlay = document.getElementById("overlaylc");
+const modal = document.getElementById("modal");
+
+function closeModal() {
+    modal.style.display = "none";
+    overlaylc.style.display = "none";
+}
+overlaylc.addEventListener("click", closeModal);
+modal.addEventListener("click", closeModal);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class=" w-full h-full">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recent Transaction</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="website icon" type="svg" href="../asset/sim-card.svg" />
+</head>
+
+<body class="bg-img-lg">
+        <div class="px-12 w-full h-full flex flex-col justify-between">
+            <div class="py-32">a</div>
+            <div class="gap-4 ">
+                <div class="px-6 py-6 lg:px-8 relative  rounded-lg shadow bg-abutxt-0 blur-lc bg-opacity-20">
+                    <h3 class="mb-4 text-xl font-medium text-center text-white">Sign in</h3>
+                    <form class="space-y-4 pb-5" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-white">Nama</label>
+                            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="w-full block">
+                                <input class="bg-abutxt-0 bg-opacity-20 outline-none text-white text-sm rounded-lg  block w-full p-2.5 " >
+                            </button>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-white">Email</label>
+                            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="w-full block">
+                                <input class="bg-abutxt-0 bg-opacity-20 outline-none text-white text-sm rounded-lg  block w-full p-2.5 ">
+                            </button>
+                        </div>
+                        <div style="margin-top: 8px !important;">
+                            <label for="password" class="block mb-2 text-sm font-medium text-white">Password</label>
+                            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="w-full block">
+                                <input class="bg-abutxt-0 bg-opacity-20 outline-none text-white border-none text-sm rounded-lg block w-full p-2.5 ">
+                            </button>
+                        </div>
+                        <div style="margin-top: 8px !important;">
+                            <label for="password" class="block mb-2 text-sm font-medium text-white">Age</label>
+                            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="w-full block">
+                                <input class="bg-abutxt-0 bg-opacity-20 outline-none text-white border-none text-sm rounded-lg block w-full p-2.5 ">
+                            </button>
+                        </div>
+                        <button type="submit" style="margin-top: 24px!important;"  class="w-full text-white bg-abutxt-0 bg-opacity-20 font-medium mt- rounded-lg text-sm px-5 py-2.5 text-center">Create</button>
+                    </form>   
+                </div>
+
+                <div class=" px-12 py-12">
+            </div>
+            </div>
+        <div class=" h-24"></div>
+        <div id="authentication-modal" tabindex="-1" aria-hidden="true" class=" fixed  top-6 left-0 right-0  hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full " style="align-items: start;">
+            <div class="relative w-full max-w-md max-h-full">
+                <div class="px-6 py-6 lg:px-8 relative  rounded-lg shadow bg-abutxt-0 blur-lc bg-opacity-20">
+                    <h3 class="mb-4 text-xl font-medium text-center text-white">Sign in</h3>
+                    <form class="space-y-4 pb-5" action="./home.html">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-white">Nama</label>
+                            <button class="w-full block">
+                                <input required class="bg-abutxt-0 bg-opacity-20 outline-none text-white text-sm rounded-lg  block w-full p-2.5 " >
+                            </button>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-white">Email</label>
+                            <button  class="w-full block">
+                                <input required name="email" type="email" id="email" class="bg-abutxt-0 bg-opacity-20 outline-none text-white text-sm rounded-lg  block w-full p-2.5 ">
+                            </button>
+                        </div>
+                        <div style="margin-top: 8px !important;">
+                            <label for="password" class="block mb-2 text-sm font-medium text-white">Password</label>
+                            <button  class="w-full block">
+                                <input required name="password" type="password" id="password" class="bg-abutxt-0 bg-opacity-20 outline-none text-white border-none text-sm rounded-lg block w-full p-2.5 ">
+                            </button>
+                        </div>
+                        <div style="margin-top: 8px !important;">
+                            <label for="password" class="block mb-2 text-sm font-medium text-white">Age</label>
+                            <button  class="w-full block">
+                                <input required class="bg-abutxt-0 bg-opacity-20 outline-none text-white border-none text-sm rounded-lg block w-full p-2.5 ">
+                            </button>
+                        </div>
+                        <button type="submit" style="margin-top: 24px!important;" class="w-full text-white bg-abutxt-0 bg-opacity-20 font-medium mt- rounded-lg text-sm px-5 py-2.5 text-center">Create</button>
+                    </form>   
+                </div>
+                <div class="overlaylc -z-50"></div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

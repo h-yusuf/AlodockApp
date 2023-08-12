@@ -27,6 +27,14 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.bg-img-lg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../asset/bg-igame-lg.png");
+  background-size: cover;
+  background-position: center;
+}
 .ractangle {
   height: 149px;
   width: 100%;
@@ -61,6 +69,9 @@ body {
   margin-left: 32px ;
   margin-right: 32px ;
 }
+.blur-lc{
+  backdrop-filter: blur(10px);
+}
 .px24{
   width: 24px;
   height: 24px;
@@ -77,4 +88,12 @@ body {
 }
 .swict-btn.active {
   background-color: #DAFE3C; /* Atur warna latar belakang menjadi kuning */
+}
+.overlaylc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Warna hitam dengan opasitas 70% */
 }
